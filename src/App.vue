@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <NavbarComponent/>
+    <BannerComponent/>
+    <SliderComponent/>
+    <AgendaComponent/>
+    <div :style="{height:'350px', marginTop:'450px'}">
+      <img src="./assets/BG médico sujetando manos de paciente.jpg" alt="" :style="{ width:'100%', height:'100%'}">
+    </div> 
+    <SecondBannerComponent/>   
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import NavbarComponent from './components/Nabvar.vue';
+import BannerComponent from './components/Banner.vue';
+import SliderComponent from './components/Slider.vue';
+import AgendaComponent from './components/Agenda.vue';
+import SecondBannerComponent from './components/SecondBanner.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NavbarComponent,
+    BannerComponent,
+    SliderComponent,
+    AgendaComponent,
+    SecondBannerComponent
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
