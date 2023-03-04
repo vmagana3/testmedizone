@@ -4,8 +4,7 @@
     <BannerComponent/>
     <SliderComponent/>
     <AgendaComponent/>
-    <div :style="{height:'350px', marginTop:'450px'}">
-      <img src="./assets/BG médico sujetando manos de paciente.jpg" alt="" :style="{ width:'100%', height:'100%'}">
+    <div :style="{height:'350px', marginTop:'450px'}" class="imgBanner">      
     </div> 
     <SecondBannerComponent/>   
   </div>
@@ -28,3 +27,20 @@ export default {
   }
 }
 </script>
+
+
+<style>
+.imgBanner{
+  background-image: url('./assets/BG médico sujetando manos de paciente.jpg');
+}
+@media (max-width: 400px) {
+  .imgBanner{
+    background-image: url('./assets/BG médico sujetando manos de paciente.jpg');
+    margin-top: 800px !important;
+    height:550px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+</style>

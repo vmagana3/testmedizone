@@ -1,10 +1,10 @@
 <template>
-    <div class="absolute w-full flex-col justify-center -mt-60">
+    <div class="absolute w-full flex-col justify-center -mt-60 sm:w-full sm:-mt-72">
         <p class="text-white font-semibold text-3xl text-center">Lo hacemos más fácil para ti</p>
         <p class="text-center text-white">Medizona es una plataforma que cuenta con las mejores<br> herramientas para mejorar la relación entre doctor y paciente</p>
         <img class="w-3/12 mt-6 m-auto" src="../assets/pleca_colores.png" alt="">
         <div class="flex justify-around mt-12 mb-20 w-full">
-            <div class="flex">
+            <div class="flex sm:flex-col">
                 <Circles v-for="(circle, index) in circles" :img="circle.img" :title="circle.text" :subTitle="circle.subtitle" :key="index"/>
             </div>            
         </div>
